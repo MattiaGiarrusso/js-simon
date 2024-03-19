@@ -27,6 +27,23 @@ setTimeout (function(){
     listNum.innerHTML = '';
 },30000);
 
+// 6) Inserisco in una funzione timing un ciclo for per chiedere all'utente i 5 numeri memorizzati
+setTimeout (function() {
+    for (let i = 0; i < 5; i++) {
+        let proptNum;
+        proptNum = parseInt(prompt("Inserisci i 5 numeri che ricordi"));
+        
+        for (let n = 0; n < listRandomNum.length; n++) {
+        if (proptNum == listRandomNum[n]) {
+            listPromptNum.push(proptNum);
+        }
+        }
+    }
+// 7) stampo quanti e quali i numeri l'utente ha indovinato nel DOM 
+listNum.innerHTML = `Hai indovinato ${listPromptNum.length} numeri. Esattamente i numeri: ${listPromptNum}`;
+console.log(listaNumeriPrompt);
+}, 30100);
+
 
 
 
