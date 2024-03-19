@@ -4,7 +4,12 @@
 // Dopo che sono stati inseriti i 5 numeri, 
 // il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
+// 2) Richiamo l'elemento del Dom che mi servirà per stampare i messaggi all'utente in pagina
+const listNum = document.getElementById('list-number');
 
+// 3) creo gli array vuoti dei numeri casuali e di quelli ricordati dall'utente
+let listRandomNum = [];
+let listPromptNum = [];
 
 
 
