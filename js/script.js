@@ -4,3 +4,16 @@
 // Dopo che sono stati inseriti i 5 numeri, 
 // il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
+
+
+
+
+
+
+//******************* FUNCTION GEN-RANDOM-NUM ************************* */
+
+// 1) Inserisco la funzione che genera numeri random
+
+function genRandomNum (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
