@@ -22,6 +22,10 @@ while (listRandomNum.length<5) {
 console.log(listRandomNum);
 listNum.innerHTML = `Cerca di ricordare questi cinque numeri: ${listRandomNum}`;
 
+// 5) creo una funzione timing per far scomparire il contenuto del div con una stringa vuota
+setTimeout (function(){
+    listNum.innerHTML = '';
+},30000);
 
 
 
