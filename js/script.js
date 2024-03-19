@@ -11,6 +11,17 @@ const listNum = document.getElementById('list-number');
 let listRandomNum = [];
 let listPromptNum = [];
 
+// 4) creo un ciclo while per pushare 5 numeri random nell'array
+while (listRandomNum.length<5) {
+    let randomNum = genRandomNum(1, 100);
+    console.log(randomNum);
+    if (!listRandomNum.includes(randomNum)) {
+        listRandomNum.push(randomNum);
+    };
+}
+console.log(listRandomNum);
+listNum.innerHTML = `Cerca di ricordare questi cinque numeri: ${listRandomNum}`;
+
 
 
 
